@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Балда (игра)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="context">
+            <div class="block">
+                <div style="float:right;/*margin-right:2px*/">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D0%B4%D0%B0_%28%D0%B8%D0%B3%D1%80%D0%B0%29">
+                        Правила игры
+                    </a>
+                </div>
+                <div id="result"></div>
+                <div style="clear: both"></div>
+                <div id="error"></div>
+            </div>
+            <div id="content"></div>
+            <div>
+                <button id="start">Старт</button>
+                <button id="test">Ход</button>
+                <button id="cancel">Отмена</button>
+                <button id="emulator" class="hide">Помощь</button>
+            </div>
+            <div class="block">
+                <div class="column-left">
+                    <strong>Игрок: <span id="player-score">0</span></strong>
+                    <div id="player-words"></div>
+                </div>
+                <div class="column-right">
+                    <strong>Компьютер: <span id="bot-score">0</span></strong>
+                    <div id="bot-words"></div>
+                </div>
+            </div>
+            <div id="time" class="hide"></div>
+            <div id="substrate" class="hide">
+                <div id="keyboard"></div>
+            </div>
+        </div>
+        <script src="js/track2.js"></script>
+        <script src="js/out3.js"></script>
+        <script src="js/dictionary2.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>
